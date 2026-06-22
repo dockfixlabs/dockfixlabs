@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/dockfixlabs/agentguard-app">ًں¤– AgentGuard App</a></h3>
+      <h3 align="center"><a href="https://github.com/dockfixlabs/agentguard-app">ًں¤- AgentGuard App</a></h3>
       <p align="center"><b>GitHub App for automated PR reviews.</b> Scans every PR for AI agent security vulnerabilities and posts inline comments with OWASP ASI findings.</p>
       <p align="center">
         <img src="https://img.shields.io/badge/GitHub-App-2088FF?style=flat-square&logo=github&logoColor=white" />

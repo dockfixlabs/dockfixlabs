@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="assets/logo.png" width="120" alt="Dockfix Labs" />
 </p>
 
@@ -21,7 +21,7 @@
 
 ---
 
-### " Flagship Projects
+### Flagship Projects
 
 <table>
   <tr>

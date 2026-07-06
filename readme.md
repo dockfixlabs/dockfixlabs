@@ -1,100 +1,35 @@
-﻿<p align="center">
-  <img src="assets/logo.png" width="120" alt="Dockfix Labs" />
-</p>
+# Dockfix Labs
 
-<h1 align="center">Dockfix Labs</h1>
+**Autonomous Security for the AI Agent Era**
 
-<p align="center">Building open-source security tools for the AI agent era</p>
-
-<p align="center">
-  <code>Agent Security</code> - <code>MCP Protocol</code> - <code>OWASP ASI Top 10</code> - <code>Developer Tooling</code>
-</p>
+[![Website](https://img.shields.io/badge/Website-dockfixlabs.github.io-00e676?style=flat-square)](https://dockfixlabs.github.io)
+[![PyPI](https://img.shields.io/badge/PyPI-dfx--agentguard-3775A9?style=flat-square&logo=pypi)](https://pypi.org/project/dfx-agentguard/)
+[![Docker](https://img.shields.io/badge/Docker-ghcr.io-2496ED?style=flat-square&logo=docker)](https://github.com/dockfixlabs/agentguard/pkgs/container/agentguard)
+[![MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/dockfixlabs/agentguard/blob/main/LICENSE)
 
 ---
 
-<p align="center">
-  <a href="https://pypi.org/project/dfx-agentguard/"><img src="https://img.shields.io/pypi/v/dfx-agentguard?style=flat-square&color=1f6feb&label=agentguard" /></a>
-  <a href="https://pypi.org/project/dfx-mcp-scanner/"><img src="https://img.shields.io/pypi/v/dfx-mcp-scanner?style=flat-square&color=2ea043&label=mcp-scanner" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/OWASP-ASI%20Top%2010-orange?style=flat-square" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/status-Building%20in%20Public-brightgreen?style=flat-square" /></a>
-</p>
+### Products
+
+| Product | Description | Links |
+|---------|-------------|-------|
+| **AgentGuard** | AI agent code security scanner — 22 rules, OWASP ASI compliant | [GitHub](https://github.com/dockfixlabs/agentguard) · [PyPI](https://pypi.org/project/dfx-agentguard/) · [Docker](https://github.com/dockfixlabs/agentguard/pkgs/container/agentguard) |
+| **MCP Scanner** | MCP server security scanner — 12 checks | [GitHub](https://github.com/dockfixlabs/mcp-scanner) · [PyPI](https://pypi.org/project/dfx-mcp-scanner/) |
+
+### By the Numbers
+
+- **6,173** security findings discovered
+- **10** AI agent frameworks scanned
+- **11,036** files analyzed
+- **22** detection rules (CWE + CVSS mapped)
+- **3** active CVE/advisory submissions
+
+### Active Research
+
+- [CWE-1188](https://github.com/langchain-ai/langchain/security/advisories/GHSA-44f8-xvpq-8jcg) (CVSS 10.0) — LangChain ShellToolMiddleware insecure default
+- [GHSA-4whw-g9j9-v77x](https://github.com/langgenius/dify/security/advisories/GHSA-4whw-g9j9-v77x) (CVSS 8.6) — Dify agent collusion
+- [Research Paper](https://github.com/dockfixlabs/agentguard/blob/main/PAPER_6173_FINDINGS.md) — "6,173 Security Findings in 10 AI Agent Frameworks"
 
 ---
 
-### Flagship Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/dockfixlabs/agentguard"> AgentGuard</a></h3>
-      <p align="center"><b>Autonomous security scanner for AI agents.</b> Detects prompt injection, tool abuse, data exfiltration, and all 10 OWASP ASI Top 10 vulnerabilities. MCP server mode included.</p>
-      <p align="center">
-        <a href="https://pypi.org/project/dfx-agentguard/"><img src="https://img.shields.io/pypi/v/dfx-agentguard?style=flat-square&logo=pypi&logoColor=white" /></a>
-        <img src="https://img.shields.io/badge/coverage-10%2F10%20OWASP%20ASI-red?style=flat-square" />
-        <img src="https://img.shields.io/badge/MCP-Protocol-blueviolet?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/dockfixlabs/mcp-scanner">" MCP Scanner</a></h3>
-      <p align="center"><b>Security scanner for MCP servers.</b> Detects malicious tools, data exfiltration, and supply chain risks before you connect an MCP server to your AI agent.</p>
-      <p align="center">
-        <a href="https://pypi.org/project/dfx-mcp-scanner/"><img src="https://img.shields.io/pypi/v/dfx-mcp-scanner?style=flat-square&logo=pypi&logoColor=white" /></a>
-        <img src="https://img.shields.io/badge/checks-7%20security%20rules-yellow?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/dockfixlabs/agentguard-app">- AgentGuard App</a></h3>
-      <p align="center"><b>GitHub App for automated PR reviews.</b> Scans every PR for AI agent security vulnerabilities and posts inline comments with OWASP ASI findings.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/GitHub-App-2088FF?style=flat-square&logo=github&logoColor=white" />
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/dockfixlabs/agentguard-vscode">" AgentGuard VS Code</a></h3>
-      <p align="center"><b>VS Code extension.</b> Inline security diagnostics for AI agent code. Scan on save, findings tree, quick fixes.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-</table>
-
-### " Install
-
-```bash
-pip install dfx-agentguard    # AI agent security scanner
-pip install dfx-mcp-scanner   # MCP server security scanner
-```
-
-### " GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dockfixlabs&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="165" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dockfixlabs&theme=github-dark&hide_border=true" height="165" />
-</p>
-
-###  Tech Stack
-
-```
-Python - TypeScript - JavaScript
-GitHub Actions - FastAPI - MCP Protocol
-OWASP ASI - VS Code - PyPI
-```
-
-### " Contact
-
-- Open an issue on any repo
-- Or reach out via [GitHub Discussions](https://github.com/dockfixlabs/agentguard/discussions)
-
----
-
-<div align="center">
-  <i>Securing the autonomous web.</i>
-  <br/><br/>
-  <img src="https://komarev.com/ghpvc/?username=dockfixlabs&color=1f6feb&style=flat-square" />
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2ea043,50:1f6feb,100:0d1117&height=120&section=footer" width="100%"/>
+*Building the standard for autonomous AI agent security. Open source. MIT licensed. Paid in USDC.*
